@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Using double div inheritance and optimacy -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        .a1 {
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+        }
+        
+        .a2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+        }
+        
+        .a3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+        
+        .ex1 {
+            background-color: hsl(244, 38%, 16%);
+            width: 40%;
+            height: 400px;
+            float: left;
+            padding-left: 5%;
+            padding-right: 5%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        
+        .ex2 {
+            float: right;
+            height: 400px;
+            width: 50%;
+            border-bottom-right-radius: 10px;
+            background: url("image-header-mobile.jpg");
+            background-size: 100% 100%;
+        }
+        
+        .im {
+            background-color: hsl(277, 64%, 61%);
+            opacity: 0.6;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .l {
+            background-color: hsl(244, 38%, 16%);
+            width: 28.33%;
+            float: left;
+        }
+        
+        .r {
+            background-color: hsl(244, 38%, 16%);
+            width: 28.33%;
+            float: right;
+            padding-left: 5%;
+        }
+        
+        .pad {
+            padding: 10%;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .ex2 {
+                width: 100%;
+                height: 200px;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 0px;
+                background: url("image-header-mobile.jpg");
+                background-size: 100% 100%;
+            }
+            .im {
+                background-color: hsl(277, 64%, 61%);
+                opacity: 0.6;
+                width: 100%;
+                height: 100%;
+            }
+            .a1,
+            .a2 {
+                text-align: center;
+            }
+            .l {
+                width: 100%;
+                text-align: center;
+            }
+            .r {
+                width: 100%;
+                text-align: center;
+            }
+            .pad {
+                padding: 20%;
+            }
+            .ex1 {
+                width: 90%;
+                height: auto;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                border-top-left-radius: 0px;
+            }
+            body {
+                height: 900px;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: hsl(233, 47%, 7%);">
+    <div role="main" class="pad">
+
+
+        <div class="ex2">
+            <div class="im"></div>
+        </div>
+
+        <div role="region " aria-labelledby="region2 " class="ex1">
+
+            <h1 class="a1 ">Get
+                <span style="color:#750f6e; ">insights
+                </span> that help your business grow. </h1>
+            <p style="color: hsla(0, 0%, 100%, 0.75) " class="a2 ">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+            <br><br>
+            <div>
+                <div class="l ">
+                    <p style="color: hsl(0, 0%, 100%); " class="a3 ">10k+</p>
+                    <p style="color:hsla(0, 0%, 100%, 0.6); " class="a1 ">COMPANIES</p>
+                </div>
+                <div class="r ">
+                    <p style="color: hsl(0, 0%, 100%); " class="a3 ">314</p>
+                    <p style="color:hsla(0, 0%, 100%, 0.6); " class="a1 ">TEMPLATES</p>
+                </div>
+                <div class="r ">
+                    <p style="color: hsl(0, 0%, 100%); " class="a3 ">12m+</p>
+                    <p style="color:hsla(0, 0%, 100%, 0.6); " class="a1 ">QUERIES</p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>
